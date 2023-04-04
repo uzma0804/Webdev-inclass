@@ -1,0 +1,157 @@
+<!DOCTYPE html> <!--DOCTYPE is a declaration, not a tag. Says it is using HTML-->
+
+<!--HTML is the structure and content of a webpage. It stands for HyperText Markup language. A mark up language is not a programming language. Resource to get help: Mozilla Developer Network (MDN).
+    The general rule : <opening tag> Some content <closing tag>-->
+
+<!--Block level elements: Each one gets their own line. Examples include: <h1> to <h6>, <p>, <div>, <form>-->
+<!--Inline elements-- Each one does not get their own line.  Examples include: <b>, <strong>, <i>, <em>, <a>-->  
+    
+<!--Divs and Spans: Both allows you to group contents in your webpage together.
+* <div> content goes here </div>: Is a generic container and can group things together (Is a block level element)
+*<span> some text </span>: Also a container but is an in-line element. For example: I dance for no reason. You want to make the word dance bold and red. So, all you will have to do is have the "dance" part inside a span tag and then add styling to that span to make it bold and red. Cannot do this with div, as div will push the word "dance" in a another line since div is a block level element.-->
+    
+
+<html>   <!--Root element start-->
+
+    <head>
+    <!--This is where your metadata goes-->    
+    <title>Test Website</title>    <!--This is the name of the tab and will not show up in the webpage itself-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body> 
+<!--Everything you see in your webpage will go here-->      
+
+
+<div class="header container" >   
+<h1> This is Kiki's personal website </h1>
+<p>Welcome to her website</p>
+</div>
+<!--Let's add an image--> <!--the image tag is a self closing tag but you can add </img> as well-->
+<div class="personalinfo container">
+<h2> About Kiki</h2>
+<img src="kiki.png"> 
+<p id="description"> Kiki is an anime character who is a witch and has a cat named Jiji.</p>
+
+<!--Let's create some anchor tags: Used to link other sites or contents inside the webpage/tab-->
+ 
+<a href="#">IMDb</a>
+<a href="#">Twitter</a>
+<a href="#">Movie Link</a>
+<a href="#">Whatever</a> <!--Will not show up in the page as there is nothing to click on-->
+</div>
+
+<div class="container">
+<!--let's create a table-->
+<table class="tab"> <!--border="1"-->
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tbody>
+            <tr>
+                <td> Jiji </td>
+                <td> 2 </td>
+            </tr>
+            <tr>
+                <td> Mimi </td>
+                <td> 5 </td>
+            </tr>
+        </tbody>
+    </thead>
+</table>
+</div>
+
+ 
+
+
+
+<!--Create 6 headers-->  
+<!--
+<h1> I am a header</h1>
+<h2>I am a slightly smaller header</h2>
+<h3>I am a slightly smaller header than h2</h3>
+<h4>I am a slightly smaller header than h3</h4>
+<h5>I am a slightly smaller header than h4</h5>
+<h6>I am the smallest header</h6>
+
+<p> I am a paragraph</p>
+
+<button>I am a button</button>
+
+<ul>
+    <li> This is an unordered list</li>
+    <li> This is an unordered list</li>
+    <li> This is an unordered list</li>
+</ul>
+
+<ol>
+    <li> This is an ordered list</li>
+    <li> This is an ordered list</li>
+    <li> This is an ordered list</li>
+</ol>
+--> 
+
+    </body>
+</html> <!--Root element end-->
+
+
+
+
+ 
+
+<!--To start a Python Simple Server: Go to the terminal tab and open a new terminal. In the terminal, type: 
+python -m SimpleHTTPServer 5000
+For Python 3: python  -m http.server 8000 
+Once server running: Go to browser and enter localhost:8000 -->
+
+
+
+
+
+<!--In-line CSS stuff-->
+
+<!--CSS: Cascading Style Sheets. Sheets bacause we are going to write these seperately from our HTML. They are not inside the HTML. They are seperate documents that we then include in our HTML
+
+Check out: CSS Zen Garden
+
+The General Rule: 
+selector{
+    property: value;
+    anotherProperty: value;
+    yetAnotherProperty: value;
+}
+
+"selector" selects from the existing HTML elements in our page.
+
+You can add CSS styling in three ways:
+
+1. Inline (traditional way of doing it)
+    <h3 style='color: pink;'> Hi there! </h3>
+
+2. Style Tag (nested) {not ideal}
+    <html>
+        <head>
+            <title>This is nested style tag demo</title>
+            <style type="text/css">
+                p{
+                    color:red;
+                }
+                
+            </style>
+
+3. Seperate CSS files using the <link> tag:
+
+    <!DOCTYPE html>
+            <head>
+                <title>This is to show how to link a seperate CSS file </title>
+       ****     <link rel="stylesheet" type="text/css" href="style.css">    ****
+            </head>   
+    </html>
+
+
+-->
+
+
+ 

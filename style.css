@@ -1,0 +1,220 @@
+/*Make all the headers purple and 56px font*/
+
+h1,h2{
+    color: purple;
+    /* text-transform: uppercase;  */
+    /*font-size: 86px; */
+}
+
+/* Change style of 1 letter
+h1:first-letter{
+    color:red;
+    font-size:100px;
+}
+
+*/
+
+h1{
+    color:white;
+    /*font-size: 86px; */
+}
+
+/*Give the image a border and resize it*/
+
+img{
+    width:300px;
+    border: 5px solid #555;
+}
+
+/* Centre align everything */
+
+/*body{
+    font-family:sans-serif;
+}
+    background:#965aa6; 
+
+}
+
+div{
+    background:pink;
+}
+
+p{
+    color:blue;
+    font-weight: bolder;
+}
+
+*/
+
+
+/* Id selector: For single elements in the HTML, use ID selector. Note that you can only asign an ID to a specific element and not multiple ones.
+ID selectors selects an element with a given Id. Step 1 is to add the hook in the html file and then refer in the css file.
+We use # for Id*/
+
+#description{
+    color:red;
+}
+
+
+/* Class selector: Selects all the elements with a given class.  Can be applied to a any number of elements on the html page and can be given to multiple elements.
+We use . for class
+*/
+
+.container{
+  text-align: center; 
+  padding-top:20px;
+}
+ 
+.header{
+    padding: 20px;
+    background: purple;
+    color:white;
+    display:felx;
+}
+
+.personalinfo{
+    padding-bottom:40px;
+    background-color: antiquewhite;  
+}
+
+ /*To center align a table add left and right margin to auto*/
+ 
+
+table, th, td {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+
+  /*Let's style the buttons*/
+.anchor{
+    background-color: darkslateblue;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin:2px;     
+}  
+
+/*Make the buttons interactive*/
+a:hover {
+    background-color:darkred;
+    color:bisque;
+
+}
+
+h1:hover{
+    color:aquamarine;
+}
+
+
+a:visited{
+    color:red;
+}
+
+
+
+/* Specificity: Whatever style is more specific will win.
+body{
+    color:black;
+}
+
+ul{
+    color:green;
+}
+
+*/
+
+/*Background image*/
+body{
+  /*  background: url(kiki.png);  Will be tiled if not big enough*/
+    /*background-repeat:no-repeat; Will not repeat but will also not cover the whole screen*/
+    /* background-size: cover; Will cover the whole page*/
+
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+CSS: Cascading Style Sheets. Sheets bacause we are going to write these seperately from our HTML. They are not inside the HTML. They are seperate documents that we then include in our HTML
+
+Check out: CSS Zen Garden
+
+The General Rule: 
+selector{
+    property: value;
+    anotherProperty: value;
+    yetAnotherProperty: value;
+}
+
+"selector" selects from the existing HTML elements in our page.
+
+You can add CSS styling in three ways:
+
+1. Inline (traditional way of doing it)
+    <h3 style='color: pink;'> Hi there! </h3>
+
+2. Style Tag (nested) {not ideal}
+    <html>
+        <head>
+            <title>This is nested style tag demo</title>
+            <style type="text/css">
+                p{
+                    color:red;
+                }
+                
+            </style>
+
+3. Seperate CSS files using the <link> tag:
+
+    <!DOCTYPE html>
+            <head>
+                <title>This is to show how to link a seperate CSS file </title>
+       ****     <link rel="stylesheet" type="text/css" href="style.css">    ****
+            </head>   
+    </html>
+
+    */
+    
